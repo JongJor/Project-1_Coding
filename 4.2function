@@ -1,0 +1,16 @@
+import math  # นำเข้าโมดูล math
+
+def calculate_trigonometric(angle_degrees):
+    angle_r = math.radians(angle_degrees)  # แปลงองศาเป็นเรเดียน
+    sin_value = math.sin(angle_r)
+    cos_value = math.cos(angle_r)
+    tan_value = math.tan(angle_r)
+    
+    return sin_value, cos_value, tan_value
+
+angle = 30
+sin_val, cos_val, tan_val = calculate_trigonometric(angle)
+
+print("sin is", '%.2f' % sin_val)
+print("cos is", '%.2f' % cos_val)
+print("tan is", '%.2f' % tan_val)
